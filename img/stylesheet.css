@@ -1,0 +1,676 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+     border: border-box;  
+     /* border-box means all the sizing that a border will recieve will be count in its original height and width  */
+}
+
+.navbar{
+    height: 60px;
+    background-color:#0F1111 ;
+    color: white;
+    display: flex;
+     align-items: center;  /*to make it certically center */
+    justify-content: space-evenly;
+}
+
+.nav-logo{
+    height: 50px; 
+}
+
+/* to have white border whiler hovering on icons present at navbar */
+
+.border{
+    border: 2px solid transparent;
+   
+}
+
+.border:hover{
+    border: 1px solid white;
+}
+
+.logo{
+     height: 50px;
+    width: 100%; 
+} 
+
+/* amazon.in styling */
+
+.start{ 
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #f08804;
+    height: 100px;
+    width: 100px;
+    font-size: 1.5rem;
+    position: relative;
+    
+    top: 15px;
+}
+
+/* navbar adress box styling*/
+
+.location{
+    text-transform: capitalize;
+    width: 92.4px;
+    /* margin-left: 10px; */
+}
+
+#upper{
+    font-size: 0.65rem;
+    color: #cccccc;
+    width: 56.4px;
+    height: 14px;
+     margin-left: 15px; 
+}
+
+/* setting the logo and pakistan on same line */
+
+.add-icon{
+    display:flex;
+    align-items: center;
+}
+
+#adressicon{
+    
+    width: 15px;
+    height: 18px;
+}
+
+#down{
+    font-size: 1rem;
+    color: #ffffff;
+    width: 56.4px;
+    height: 16px;
+    /* margin-left: 2px;*/
+} 
+
+/* search box stylig */
+
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:  #f08804;
+    width: 60%; /* to occupy 60% space in nav bar */
+    height: 40px;
+    border-radius: 4px;
+}
+
+.search-select{
+    background-color: #f3f3f3;
+    width:60px ;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none; /* this will remove extra/by default border from option (all) */
+}
+
+.search-select:hover{
+    width: 100px
+}
+
+.search-input{
+     width: 100%; /* to occupy remaining complete space */
+    font-size: 1rem;
+    border: none; /* this will remove extra/by default border from option (search amazon) */
+}
+
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center; /*  search icon will be in center but horizontally */
+    align-items: center;  /*  search icon will be in center but vertically */
+    font-size: 1.2rem;
+    color: #0F1111;
+}
+
+.nav-search:hover{ border: 2px solid #f08804 ;}
+
+/* styling for (signin and accounts) and (returns) */
+
+span{
+    font-size: 0.7rem;
+}
+
+.nav-second{
+    font-size:0.85rem ;
+    font-weight: 700;
+}
+
+/*  cart styling */
+.nav-cart i{
+    font-size: 30px;
+}
+
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* stylling for panel below nav-bar */
+
+.panel{
+    display:flex;
+    background-color: #232f3e;
+    height: 40px;
+    width: 60opx;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.panel-all{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+.panel-ops p{
+    text-transform: capitalize;
+    color: white;
+    display:inline;
+    margin-right: 10px;
+}
+
+.panel-ops{
+    width: 90%;
+}
+
+
+/* stylling of hero section */
+
+.hero-section{
+    background-image: url(img/hero2.jpg);
+    background-size: cover;
+    height: 30rem ;
+    width:  100%;  
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-end;
+}
+
+.hero-msg{
+    background-color: white;
+    height: 40px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin-bottom: 155px;
+}
+
+.hero-msg a{
+    color: #007185;
+    text-decoration:none;
+    font-size: 0.85rem;
+}
+
+.border-new{
+    border: 2px solid transparent;
+   
+}
+
+.border-new:hover{
+    border: 1px solid black;
+}
+
+/* stylling of box section */
+
+
+.shop-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: hwb(111 72% 13%);
+}
+
+/* applied on all boxes */
+
+.box{
+    height: 400px;
+    width: 23% ;
+    background-color: #ffffff;
+    padding: 20px 0px 15px;
+   margin-top: 15px;
+}
+
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 8px;
+}
+
+.see a{
+    color: #007185;
+    text-decoration:none;
+    font-size: 0.85rem;
+}
+
+.see a:hover{
+    color: #f08804;
+    text-decoration: underline;
+}
+
+/*     IMAGES FOR ALL BOXES */
+
+/* for box1 */
+.box1  .box-img{
+    background-image: url(img/game1.jpg);
+    background-size: cover;
+    height: 320px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+
+/* for box2 */
+.box2  .box-img{
+    background-image: url(img/box2.jpg);
+    background-size: cover;
+    height: 320px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+/* for box3 */
+.box3  .box-img{
+    background-image: url(img/box3.jpg);
+    background-size: cover;
+    height: 320px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+/* for box4 */
+.box4  .box-img{
+    background-image: url(img/box4.jpg);
+    background-size: cover;
+    height: 320px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+
+/* books */
+.scrollmenu{
+    padding-top: 15px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: hwb(111 72% 13%);
+}
+.innerscroll{
+    background-color: white;
+    height: 270px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.innerscroll h2{
+    color: black;
+    height: 21px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+.scrollrow{ 
+   
+    width: 100%; /* Set the width of the container */
+    /* overflow-x: scroll; Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks for inline elements */
+    
+}
+.scrollrow a {
+    display: inline-block; /* Make anchor tags behave as inline-block elements */
+    margin-right: 5px; /* Add some space between images */
+    padding-top: 15px;
+   
+   
+  }
+  
+  .scrollrow img {
+    max-width: 100%; /* Ensure images don't exceed the width of the container */
+    height: auto; /* Maintain the aspect ratio of the images */
+    
+  }
+
+
+/* for box5 */
+.box5  .box-img{
+    background-image: url(img/box5.jpg);
+    background-size: cover;
+    height: 320px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;   
+}
+
+
+/* for box6 */
+.box6  .box-img{
+    background-image: url(img/box6i.jpg);
+    background-size: cover;
+    height: 320px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+/* for box7 */
+.box7  .box-img{
+    background-image: url(img/box7.jpg);
+    background-size: cover;
+    height: 320px; 
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+/* for box8 */
+.box8  .box-img{
+    background-image: url(img/box8.jpg);
+    background-size: cover;
+    height: 320px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+/* for box9 */
+.box9  .box-img{
+    background-image: url(img/box9.jpg);
+    background-size: cover;
+    height: 320px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+/* for box10 */
+.box10  .box-img{
+    background-image: url(img/box10.jpg);
+    background-size: cover;
+    height: 320px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+/* for box11 */
+.box11  .box-img{
+    background-image: url(img/box11.jpg);
+    background-size: cover;
+    height: 320px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+/* for box12 */
+.box12  .box-img{
+    background-image: url(img/box12.jpg);
+    background-size: cover;
+    height: 320px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+
+/* clothes */
+.clothmenu{
+   
+    padding-top: 15px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: hwb(111 72% 13%);
+}
+.innercloth{
+    background-color: white;
+    height: 270px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.innercloth h2{
+    color: black;
+    height: 21px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+.clothrow{ 
+   
+    width: 100%; /* Set the width of the container */
+    /* overflow-x: scroll; Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks for inline elements */
+    padding-left: 8px;
+}
+.clothrow a {
+    display: inline-block; /* Make anchor tags behave as inline-block elements */
+    margin-right: 5px; /* Add some space between images */
+    padding-top: 15px;
+    padding-left: 5px;
+   
+  }
+
+  .clothrow a:hover{
+    border: 1px solid #b4a7a7;
+  }
+  
+  .clothrow img {
+    max-width: 100%; /* Ensure images don't exceed the width of the container */
+    height: auto; /* Maintain the aspect ratio of the images */
+    
+  }
+
+/* for box13 */
+.box13  .box-img{
+    background-image: url(img/box13.jpg);
+    background-size: cover;
+    height: 320px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;   
+}
+
+/* for box14 */
+.box14  .box-img{
+    background-image: url(img/box14.jpg);
+    background-size: cover;
+    height: 320px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;   
+}
+
+/* for box15 */
+.box15  .box-img{
+    background-image: url(img/box15.jpg);
+    background-size: cover;
+    height: 320px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;   
+}
+
+/* for box16 */
+.box16  .box-img{
+    background-image: url(img/box16.jpg);
+    background-size: cover;
+    height: 320px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;   
+}
+
+
+/* sign-in  */
+.section-signin{
+    height: 170px;
+    width: 100%;
+    background-color: white;   
+   
+}
+.signin-layout{
+    padding-top: 14px;
+    height: 136px;
+    width: 1518px;
+    border: 1px solid rgb(175, 169, 169);
+}
+
+.signin-content{
+    margin-top: 21px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.para{
+    color: hsl(180, 3%, 24%);
+    font-size: 0.78rem;
+    font-weight: 500;
+}
+.signin-btn{
+    height: 26px;
+    width: 250px;
+    color: black;
+    margin: 8px 0;
+    color: black;
+    background-color: hsl(47, 100%, 59%);
+    font-weight: bold;
+    border-radius: 4px;
+    border: 2px solid hsl(47, 100%, 59%);;
+}
+.end {
+    color: hsl(180, 3%, 24%);
+    font-size: 0.7rem;
+    font-weight: 500;
+    
+}
+ .end a{
+    color: #177586;
+    text-decoration: none;
+}
+
+
+/* styling the footer */
+
+footer{
+    margin-top: 15px;
+}
+
+.footpanel-1{
+    background-color: #374758 ;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.footpanel-1 a{
+    text-decoration:none;
+    color: white;
+}
+
+.footpanel-1 a:hover{
+    text-decoration: underline;
+}
+
+
+.footpanel-2{
+    background-color: #232f3e;
+    color: white;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul{
+    margin-top: 50px;
+}
+
+ul a{
+    display: block; /* to make the list items display vertically */
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color:  #dddddd;
+    text-decoration:none;
+}
+
+ul a:hover{
+    text-decoration: underline;
+}
+
+.footpanel-3{
+    background-color: #232f3e;
+    color: white;
+    border-top: 0.5px solid  #314357;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+     width: 100%;
+
+}
+
+.last-logo{
+    color: #f08804;
+    height: 100px;
+    max-width: 80%;
+    font-size: 1.5rem;
+    position: relative;
+    margin-top: 70px;
+    margin-right: 30px;
+    position:relative;
+    left: 270px;
+}
+
+.sidelogo{
+    display: flex;
+    justify-content: space-evenly;
+    border: 0.2px solid #CCC;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: #CCC;
+    position: relative;
+}
+
+.lang{
+    width: 90px;
+    left: 150px;
+}
+
+.currency{
+    width: 110px;
+    right: 50px;
+}
+
+.country{
+    width: 90px;
+    right:250px;
+}
+
+.footpanel-4{
+    background-color:#0F1111 ;
+    color: white;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.footpanel-4 a{
+    text-decoration: none;
+    color: white;
+}
+
+.pages{
+   padding-top: 25px;
+}
+.copyright{
+    padding-top: 5px;
+}
